@@ -1,0 +1,35 @@
+{
+  "n_train": 826000,
+  "n_val": 177000,
+  "n_test": 177000,
+  "lgbm_train_time_s": 87.7676432132721,
+  "lgbm": {
+    "test_mcc": 0.12877516726651442,
+    "threshold": 0.44,
+    "inspection_budget_recall_5pct": 0.42636457260556127
+  },
+  "logistic_regression_baseline": {
+    "test_mcc": 0.13203020370551358,
+    "threshold": 0.93
+  },
+  "random_inspection_baseline": {
+    "test_mcc": -0.003574435756230479,
+    "inspection_budget_recall_5pct": 0.05046343975283213
+  },
+  "calibration": {
+    "ece_uncalibrated": 0.10020269388197323,
+    "ece_isotonic_calibrated": 0.00018507931878104523
+  },
+  "cold_start": {
+    "n_cold_start_rows": 143979,
+    "fraction_of_test": 0.8134406779661016,
+    "test_mcc": 0.13612599145787932
+  },
+  "failure_rate": {
+    "train": 0.005416464891041162,
+    "val": 0.005655367231638418,
+    "test": 0.0054858757062146895
+  },
+  "n_features": 818,
+  "elapsed_s": 209.69656014442444
+}
