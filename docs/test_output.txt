@@ -1,0 +1,27 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.10, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\Manas\Downloads\Auto Job Applier\Total Job Application process flow\projects\nonconformance-risk-model\venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Manas\Downloads\Auto Job Applier\Total Job Application process flow
+configfile: pytest.ini
+collecting ... collected 18 items
+
+tests\test_features.py::test_build_features_adds_station_count_and_missing_fraction PASSED [  5%]
+tests\test_features.py::test_build_features_adds_one_station_flag_per_station PASSED [ 11%]
+tests\test_features.py::test_station_flag_matches_station_path_membership PASSED [ 16%]
+tests\test_features.py::test_time_ordered_split_preserves_order_and_covers_all_rows PASSED [ 22%]
+tests\test_features.py::test_cold_start_mask_flags_only_unseen_paths PASSED [ 27%]
+tests\test_generate_data.py::test_generate_returns_requested_row_count PASSED [ 33%]
+tests\test_generate_data.py::test_generate_is_deterministic_for_a_fixed_seed PASSED [ 38%]
+tests\test_generate_data.py::test_different_seeds_give_different_data PASSED [ 44%]
+tests\test_generate_data.py::test_measurement_columns_are_null_for_unvisited_stations PASSED [ 50%]
+tests\test_generate_data.py::test_response_is_binary PASSED              [ 55%]
+tests\test_generate_data.py::test_failure_rate_is_low_and_nonzero_at_scale PASSED [ 61%]
+tests\test_generate_data.py::test_station_count_matches_station_path_length PASSED [ 66%]
+tests\test_train.py::test_best_threshold_mcc_finds_a_separable_threshold PASSED [ 72%]
+tests\test_train.py::test_best_threshold_mcc_is_near_zero_for_random_scores PASSED [ 77%]
+tests\test_train.py::test_inspection_budget_recall_catches_all_top_ranked_failures PASSED [ 83%]
+tests\test_train.py::test_inspection_budget_recall_misses_when_failures_rank_low PASSED [ 88%]
+tests\test_train.py::test_expected_calibration_error_is_zero_for_perfectly_calibrated_bins PASSED [ 94%]
+tests\test_train.py::test_expected_calibration_error_is_positive_when_overconfident PASSED [100%]
+
+============================= 18 passed in 17.30s =============================
